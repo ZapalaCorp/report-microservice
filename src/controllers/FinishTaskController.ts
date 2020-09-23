@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { FinishTaskService } from './FinishTaskService';
+import { FinishTaskService } from '../services/FinishTaskService';
 import { container } from 'tsyringe';
 
 export default class FinishTaskController {

@@ -1,4 +1,4 @@
-export interface ICreateTaskDTO {
+export default interface ICreateTaskDTO {
   taskId: Number;
   newSubJobId: Number;
   onlySendJob: boolean;

@@ -1,6 +1,5 @@
 import { Router } from 'express';
-import FinishTaskController from '../services/FinishTask/FinishTaskController';
-
+import FinishTaskController from '../controllers/FinishTaskController';
 const taskRouter = Router();
 
 const finishTaskController = new FinishTaskController();

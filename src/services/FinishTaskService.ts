@@ -1,6 +1,6 @@
 import { injectable, inject } from 'tsyringe';
-import ITaskRepository from '../../repositories/ITaskRepository';
-import IFinishTaskDTO from './FinishTaskService.DTO';
+import ITaskRepository from '../repositories/ITaskRepository';
+import IFinishTaskDTO from './DTOS/FinishTaskService.DTO';
 
 @injectable()
 export class FinishTaskService {

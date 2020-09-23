@@ -1,6 +1,6 @@
-import { IMailProvider, IMessage } from "../IMailProvider";
-import nodemailer from 'nodemailer'
-import Mail from "nodemailer/lib/mailer";
+import { IMailProvider, IMessage } from '../IMailProvider';
+import nodemailer from 'nodemailer';
+import Mail from 'nodemailer/lib/mailer';
 
 export class MailtrapMailProvider implements IMailProvider {
   private transporter: Mail;
@@ -11,9 +11,9 @@ export class MailtrapMailProvider implements IMailProvider {
       port: 2525,
       auth: {
         user: 'b46da5240e73cc',
-        pass: '84b46267394ac9'
-      }
-    })
+        pass: '84b46267394ac9',
+      },
+    });
   }
 
   async sendMail(message: IMessage): Promise<void> {
@@ -28,6 +28,6 @@ export class MailtrapMailProvider implements IMailProvider {
       },
       subject: message.subject,
       html: message.body,
-    })
+    });
   }
 }
