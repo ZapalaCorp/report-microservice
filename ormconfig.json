@@ -1,0 +1,13 @@
+{
+  "type": "mysql",
+  "host": "demo.zapalago.com",
+  "port": 3306,
+  "username": "zapala",
+  "password": "f]QBMqQ6>9Yb+J",
+  "database": "zapalago_test",
+  "entities": ["./src/entities/*.ts", "dist/src/entities/*.ts"],
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
